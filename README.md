@@ -2,8 +2,8 @@
 
 This project focuses on testing the **search** and **cart functionality** of an e-commerce platform. It includes test cases, test execution results, defect logs, and API testing using Postman. The project is divided into **4 parts**:
 
-1. **Test Cases**: Detailed test cases for search and cart functionality.
-2. **Questions and Answers**: Expected behavior and requirements for the search functionality.
+1. **Questions and Answers**: Expected behavior and requirements for the search functionality.
+2. **Test Cases**: Detailed test cases for search and cart functionality.
 3. **Test Report**: Results of test execution, including defect logs and analysis.
 4. **Postman Collection**: API testing for search and cart functionality.
 
@@ -13,13 +13,13 @@ This project focuses on testing the **search** and **cart functionality** of an 
 
 The project is organized into the following files:
 
-1. **`Test_case_final.xlsx`**:
-   - Contains detailed test cases for the search and cart functionality.
-   - Columns include Test Case ID, Test Case Description, Priority, Prerequisites, Test Steps, Expected Result, Actual Result, Status, and Notes.
-
-2. **`10 Questions.pdf`**:
+1.  **`10 Questions.pdf`**:
    - Contains questions and answers related to the expected behavior of the search functionality.
    - Covers topics like handling valid/invalid keywords, search results, response time, and special characters.
+   - 
+2. **`Test_case_final.xlsx`**:
+   - Contains detailed test cases for the search and cart functionality.
+   - Columns include Test Case ID, Test Case Description, Priority, Prerequisites, Test Steps, Expected Result, Actual Result, Status, and Notes.
 
 3. **`Test_report.xlsx`**:
    - Contains the results of test execution, including defect logs and analysis.
@@ -33,7 +33,11 @@ The project is organized into the following files:
 
 ## How to Use This Project
 
-### 1. Test Cases
+### 1. Questions and Answers
+- Open the `10 Questions.pdf` file to understand the expected behavior of the search functionality.
+- This document serves as a reference for validating the test cases and test results.
+ 
+### 2. Test Cases
 - Open the `Test_case_final.xlsx` file to view the detailed test cases.
 - The test cases cover scenarios like:
   - Searching with valid and invalid keywords.
@@ -41,10 +45,6 @@ The project is organized into the following files:
   - Handling empty search fields.
   - Sorting search results.
   - Adding products to the cart and verifying the cart contents.
-
-### 2. Questions and Answers
-- Open the `10 Questions.pdf` file to understand the expected behavior of the search functionality.
-- This document serves as a reference for validating the test cases and test results.
 
 ### 3. Test Report
 - Open the `Test_report.xlsx` file to view the results of test execution.
