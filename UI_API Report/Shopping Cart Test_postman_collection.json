@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "b29d532c-0843-4d5e-a3ee-c490747cfc0d",
+		"name": "Shopping Cart Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41536799"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.evershop.io/search?keyword=Nike+react+Phantom+run+flyknit+2+&ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "keyword",
+							"value": "Nike+react+Phantom+run+flyknit+2+"
+						},
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add product to cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sku\": \"NJC48508-Pink-X\",\r\n    \"qty\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.evershop.io/api/cart/mine/items?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"api",
+						"cart",
+						"mine",
+						"items"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view cart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "cookie",
+						"value": "__stripe_mid=231cc72b-59ef-425b-9d19-62e6663e6f4a20b29d; sid=s%3AT9ao3m2p_bYsrftNS8MjuzG8nyVtgXa7.7qSwQVsrE%2F7NQmaKR15xW9qB46knpR46ZdoAOCtl%2FLk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://demo.evershop.io/cart?ajax=true",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"evershop",
+						"io"
+					],
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "ajax",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
