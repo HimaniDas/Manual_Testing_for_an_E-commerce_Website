@@ -13,10 +13,10 @@ This project focuses on testing the **search** and **cart functionality** of an 
 
 The project is organized into the following files:
 
-1.  **`10 Questions.pdf`**:
+1.  **`10 Questions`**:
    - Contains questions and answers related to the expected behavior of the search functionality.
    - Covers topics like handling valid/invalid keywords, search results, response time, and special characters.
-   - 
+    
 2. **`Test_case_final.xlsx`**:
    - Contains detailed test cases for the search and cart functionality.
    - Columns include Test Case ID, Test Case Description, Priority, Prerequisites, Test Steps, Expected Result, Actual Result, Status, and Notes.
